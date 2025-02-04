@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Tanishq Jagoori</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Tanishq Jagoori</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/prof_pic_tanishq_circular.jpeg" alt="Tanishq Jagoori profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hi, I'm</p>
+            <h1 class="title">Tanishq Jagoori</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Tanishq Jagoori resume toUse.pdf')">
+                    My Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/tanishq-jagoori/'">
+                <img src="./assets/github.png" alt="My Github Profile"
+                class="icon" onclick="location.href='https://github.com/txnixhq'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/tanishq_image_1.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ years <br>Full Stack <br>Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.S. Bachelor of Science in Computer Science <br> (Artificial Intelligence Track)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi, I'm <b>Tanishq</b>, an <b>award-winning</b> Rutgers Honors College <b>CS student</b>. I am deeply passionate about tech, specifically <b>AI & ML, NLP, and data analytics</b>. My hands-on experience, through internships at <b>Readyly</b> and <b>Bergen's Promise</b>, has fueled my drive to use technology to <b>solve the fiercest problems</b> and improve people's lives. I’ve worked on <b>AI-driven projects</b>, including <b>fine-tuning LLMs</b> for intelligent applications. I enjoy coding but <b>love solving problems</b> and taking on challenges even more.  
+
+                        <br><br>  
+
+                        Outside of tech, I’m a <b>former competitive tennis player</b> who still loves to play, run, and lose myself in music. People who know me know that I am a <b>team player</b> who brings <b>optimism and vision</b> and lifts everyone up—whether that's <b>on the court or in the office!</b>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience & Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Experience</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>SWE Intern(AI)</h3>
+                                <p>Readyly</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Data Analytics Intern</h3>
+                                <p>Bergen's Promise</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Student Supervisor</h3>
+                                <p>ODASIS, RU</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Program Assistant</h3>
+                                <p>RSSI, RU</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Physics SI Leader</h3>
+                                <p>ODASIS, RU</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Student Rep</h3>
+                                <p>2 Rutgers Search Committees</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>AI & ML</h3>
+                                <p>Fine-tuning LLMs, Neural Networks, NLP, Predictive Modeling</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>AI Model Deployment</h3>
+                                <p>TensorFlow, OpenAI API, FastAPI, Streamlit </p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Backend Development</h3>
+                                <p>FastAPI, Flask, Node.js, REST APIs, LangChain</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Frontend Development</h3>
+                                <p>React.js, TypeScript, D3.js</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Cloud & DevOps</h3>
+                                <p>AWS (Lambda, S3, EC2, DynamoDB), Kubernetes, CI/CD Pipelines</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Data Analytics</h3>
+                                <p>ETL Pipelines, SQL & NoSQL, Pandas, Neo4j</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/AIimage3.jpg" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Voice-Enabled Chat Assistant</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/txnixhq/AI-Voice-Enabled-Chat-Assistant'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/MLimage.jpg" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">ML Wiring Safety Analyzer</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/txnixhq/ML-Wiring-Safety-Analyzer'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/algo.jpg" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Employer-Student Matchmaker</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/txnixhq/Matchmaker-Module'">
+                        Github
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div></div> 
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:tanishq.jagoori@gmail.com">tanishq.jagoori@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/tanishq-jagoori/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Tanishq Jagoori. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
